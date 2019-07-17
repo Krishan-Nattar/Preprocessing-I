@@ -155,6 +155,11 @@ h2 {
   margin: 30px 0;
 }
 
+h3 {
+	font-size: 2rem;
+	margin-top: 20px;
+  }
+
 html,
 body {
   height: 100%;
@@ -188,7 +193,7 @@ header {
   a {
     text-decoration: none;
     font-size: 1.6rem;
-    color: @link-color;
+    color: fade(@link-color,60%);
     padding-left: 20px;
     text-align: center;
 
@@ -213,6 +218,7 @@ header {
   max-width: 100%;
   height: 300px;
   border-radius: 2px;
+  box-shadow: 0 0 5px 2px rgba(0,0,0,.30);
 
   .circle-picture {
     img {
@@ -230,10 +236,7 @@ header {
     h1 {
       font-size: 4rem;
     }
-    h3 {
-      font-size: 2rem;
-      margin-top: 20px;
-    }
+    
 
     button {
       background-color: @top-background;
@@ -251,7 +254,7 @@ header {
 }
 
 hr {
-  border: 2px solid @body-background;
+  border: 1px solid @body-background;
   margin: 30px 0;
 }
 
@@ -259,44 +262,45 @@ hr {
   .innermargin();
 }
 
+.skills-work{
+	.innermargin();
+	display:flex;
+	// justify-content: space-between;
+}
 .skill-section {
-  .innermargin();
+//   .innermargin();
 
-  div{
-	  margin-bottom: 30px;
-	  span{
-		  font-size: 1.3rem;
-		  color: darken(@text-color);
-	  }
+  div {
+    margin-bottom: 20px;
+    span {
+      font-size: 1.3rem;
+      color: fade(darken(@text-color, 20%),40%);
+    }
   }
 
-  
   i {
-    font-size: 50px;
+    font-size: 2rem;
     // color: green;
   }
-  .html-icons{
-	  i{
-		color: blue;
-
-	  }
-    
+  .html-icons {
+    i {
+      color: blue;
+    }
   }
   .css-icons {
-	i{
-		color:yellow;
-	}
+    i {
+      color: yellow;
+    }
   }
   .javascript-icons {
-    i{
-		color: orangered;
-	}
+    i {
+      color: orangered;
+    }
   }
   .php {
-	  i{
-		color: purple;
-	  }
-    
+    i {
+      color: purple;
+    }
   }
 }
 footer {
@@ -306,4 +310,13 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.work-history{
+	h3{
+		display:inline;
+	}
+	span{
+		
+	}
 }
