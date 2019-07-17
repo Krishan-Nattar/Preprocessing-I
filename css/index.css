@@ -105,7 +105,8 @@ section {
   display: block;
 }
 body {
-  background-color: black;
+  background: #383838;
+  background: radial-gradient(circle, #383838 0%, #d24c4b 66%, #383838 100%);
 }
 ol,
 ul {
@@ -194,7 +195,7 @@ body header a {
   text-align: center;
 }
 body header a:hover {
-  color: #d24c4b;
+  color: #ffffff;
   transition: 1s;
 }
 @media screen and (max-width: 500px) {
@@ -217,7 +218,7 @@ body .container .main {
   padding-top: 20px;
 }
 body .container .main .top-next {
-  background-color: #d24c4b;
+  background-color: #922525;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -265,7 +266,7 @@ body .container .main .top-next .name-section h1 {
   font-size: 4rem;
 }
 body .container .main .top-next .name-section button {
-  background-color: #d24c4b;
+  background-color: #7e2020;
   border: 1px solid #383838;
   margin-top: 20px;
   font-size: 1.5rem;
@@ -418,7 +419,7 @@ body .container .main .skills-work .work-history .description {
 body .container .main .contact {
   width: 300px;
   margin: 0 auto;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 @media screen and (max-width: 500px) {
   body .container .main .contact {
@@ -450,7 +451,7 @@ body .container .main .contact .contact-form input {
   font-family: "Cormorant Garamond", serif;
 }
 body .container .main .contact .contact-form input:focus {
-  background-color: skyblue;
+  background-color: #87ceeb;
   transition: 1s;
 }
 body .container .main .contact .contact-form input:focus {
@@ -468,7 +469,7 @@ body .container .main .contact .contact-form textarea {
   font-family: "Cormorant Garamond", serif;
 }
 body .container .main .contact .contact-form textarea:focus {
-  background-color: skyblue;
+  background-color: #87ceeb;
   transition: 1s;
 }
 body .container .main .contact .contact-form textarea:focus {
@@ -480,6 +481,7 @@ body .container .main .contact .contact-form button {
   border: none;
   padding: 3px;
   border-radius: 5px;
+  height: 30px;
 }
 body .container .main .contact .contact-form button:focus {
   outline: 0;
@@ -488,11 +490,13 @@ body .container .main .contact .contact-form button:hover {
   background-color: #6a1b1a;
   transition: 1s;
 }
-body .container footer {
+body footer {
   height: 60px;
-  background-color: black;
-  text-align: center;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+body footer p {
+  color: green;
 }

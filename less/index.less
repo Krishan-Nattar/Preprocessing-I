@@ -107,7 +107,8 @@ section {
   display: block;
 }
 body {
-  background-color: @body-background;
+  // background-color: @body-background;
+  .gradient-back();
 }
 ol,
 ul {
@@ -143,11 +144,20 @@ table {
 @body-background: black;
 @container-background: #383838;
 @text-color: #f7f3f2;
-@form-background: skyblue;
+@form-background: #87ceeb;
+@background-gradient: linear-gradient(90deg, rgba(135,206,235,1) 0%, rgba(210,76,75,1) 35%, rgba(56,56,56,1) 100%);
+
+
+
 
 // End Variables
 
 // Mixins
+
+.gradient-back(){
+  background: rgb(56,56,56);
+background: radial-gradient(circle, rgba(56,56,56,1) 0%, rgba(210,76,75,1) 66%, rgba(56,56,56,1) 100%);
+}
 
 .active-form(){
   &:focus{
@@ -190,7 +200,7 @@ table {
 
 .a-link-hover() {
   &:hover {
-    color: @top-background;
+    color: lighten(@top-background,60%);
     transition: 1s;
   }
 }
@@ -281,7 +291,9 @@ body {
       padding-top: 20px;
 
       .top-next {
-        background-color: @top-background;
+        background-color: darken(@top-background, 20%);
+        // background-color: lighten(@body-background, 30%);
+        // .gradient-back();
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -324,7 +336,8 @@ body {
           }
 
           button {
-            background-color: @top-background;
+            background-color: darken(@top-background,25%);
+            
             border: 1px solid @container-background;
             margin-top: 20px;
             font-size: 1.5rem;
@@ -490,7 +503,7 @@ body {
       .contact {
         width: 300px;
         margin: 0 auto;
-        padding-bottom: 20px;
+        padding-bottom: 30px;
 
         @media screen and (max-width: 500px) {
           width: 100%;
@@ -543,6 +556,7 @@ body {
             border: none;
             padding: 3px;
             border-radius: 5px;
+            height: 30px;
             .focusoutline();
             .btn-hover();
           }
@@ -550,12 +564,18 @@ body {
       }
     }
 
-    footer {
-      height: 60px;
-      background-color: @body-background;
-      text-align: center;
-      .flex-just-center();
-      align-items: center;
+    
+  }
+  footer {
+    
+    height: 60px;
+    width: 100%;
+    .flex-just-center();
+    align-items: center;
+    p{
+      // color: fade(@link-color, 100%);
+    color: green;
+
     }
   }
 }
