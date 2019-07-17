@@ -41,7 +41,8 @@
         <section class="about">
           <h2>About Me</h2>
           <p>
-            <strong>Hello, My name is Krishan Nattar!</strong><br /><br />
+            <span class="intro">Hello, My name is Krishan Nattar!</span
+            ><br /><br />
             I am a software engineer based out of Portland, Oregon. I have a
             variety of skills. You should hire me.
           </p>
@@ -55,27 +56,25 @@
           <hr />
         </section>
         <div class="skills-work">
+          <section class="skill-section">
+            <h2>Skills</h2>
+            <p>HTML</p>
+            <div class="html-icons">
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+              <i class="far fa-circle"></i>
+              <i class="far fa-circle"></i>
+              <span>Expert</span>
+            </div>
 
-        
-        <section class="skill-section">
-          <h2>Skills</h2>
-          <p>HTML</p>
-          <div class="html-icons">
-            <i class="fas fa-circle"></i>
-            <i class="fas fa-circle"></i>
-            <i class="fas fa-circle"></i>
-            <i class="fas fa-circle"></i>
-            <i class="fas fa-circle"></i>
-            <i class="fas fa-circle"></i>
-            <i class="fas fa-circle"></i>
-            <i class="fas fa-circle"></i>
-            <i class="far fa-circle"></i>
-            <i class="far fa-circle"></i>
-            <span>Expert</span>
-          </div>
-
-          <p>CSS</p>
-          <div class="css-icons">
+            <p>CSS</p>
+            <div class="css-icons">
               <i class="fas fa-circle"></i>
               <i class="fas fa-circle"></i>
               <i class="fas fa-circle"></i>
@@ -87,10 +86,10 @@
               <i class="fas fa-circle"></i>
               <i class="far fa-circle"></i>
               <span>Expert</span>
-          </div>
+            </div>
 
-          <p>JavaScript</p>
-          <div class="javascript-icons">
+            <p>JavaScript</p>
+            <div class="javascript-icons">
               <i class="fas fa-circle"></i>
               <i class="fas fa-circle"></i>
               <i class="fas fa-circle"></i>
@@ -102,10 +101,10 @@
               <i class="far fa-circle"></i>
               <i class="far fa-circle"></i>
               <span>Intermediate</span>
-          </div>
+            </div>
 
-          <p>PHP</p>
-          <div class="php">
+            <p>PHP</p>
+            <div class="php">
               <i class="fas fa-circle"></i>
               <i class="fas fa-circle"></i>
               <i class="fas fa-circle"></i>
@@ -117,20 +116,55 @@
               <i class="far fa-circle"></i>
               <i class="far fa-circle"></i>
               <span>Novice</span>
-          </div>
+            </div>
+          </section>
+          <section class="work-history">
+            <h2>Experience</h2>
+            <div class="experience-div">
+              <p>LMS Blue</p>
+              <span>2018-2019</span>
+            </div>
+            <p>PHP Developer</p>
+            <p class="description">
+              Designed a learning management system to allow companies to sell
+              courses via custom web pages embedded within the platform.
+            </p>
+            <br />
+            <div class="experience-div second-experience">
+              <p>OM Seafood</p>
+              <span>2017-2019</span>
+            </div>
+            <p>Head of IT</p>
+            <p class="description">
+              Responsible for all things tech related. This included web design,
+              custom scripts in VBA, and custom applications using VBScript
+            </p>
+          </section>
+        </div>
+        <hr>
+        <section class="contact">
+            <form id="contact-form" action="" method="post">
+                <h2>Contact</h2>
+                <p>Please get in touch</p>
+                <fieldset>
+                  <input placeholder="Name" type="text" tabindex="1" required autofocus>
+                </fieldset>
+                <fieldset>
+                  <input placeholder="Email" type="email" tabindex="2" required>
+                </fieldset>
+                <fieldset>
+                  <input placeholder="Phone" type="tel" tabindex="3" required>
+                </fieldset>
+                
+                <fieldset>
+                  <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+                </fieldset>
+                <fieldset>
+                  <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                </fieldset>
+                
+              </form>
         </section>
-        <section class="work-history">
-          <h2>Experience</h2>
-          <h3>LMS Blue</h3><span>2018-2019</span>
-          <p>PHP Developer</p>
-          <p>PHP and Laravel</p>
-          <!-- <hr> -->
-          <h3>OM Seafood</h3>
-          <span>2017-2019</span>
-          <p>Head of IT</p>
-          <p>Web Design, VBA, and VBScript</p>
-        </section>
-      </div>
       </div>
       <footer><p>Copyright Krishan's Stuff 2019</p></footer>
     </div>

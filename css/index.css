@@ -138,55 +138,59 @@ table {
 h2 {
   font-size: 2rem;
   margin: 30px 0;
+  font-weight: bold;
 }
 h3 {
   font-size: 2rem;
   margin-top: 20px;
 }
-html,
-body {
+hr {
+  border: 1px solid black;
+  margin-top: 30px;
+}
+p {
+  font-size: 1.6rem;
+}
+html {
   height: 100%;
   max-width: 800px;
   margin: 0 auto;
   font-size: 62.5%;
   line-height: 1.5;
 }
-p {
-  font-size: 1.6rem;
-}
-.container {
-  max-width: 800px;
-  background-color: #383838;
-  border-radius: 2px;
-}
-header {
+body header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   max-width: 100%;
   height: 60px;
 }
-header nav {
+body header nav {
   flex-grow: 1;
   display: flex;
   justify-content: flex-end;
 }
-header a {
+body header a {
   text-decoration: none;
   font-size: 1.6rem;
   color: rgba(255, 255, 255, 0.6);
   padding-left: 20px;
   text-align: center;
 }
-header a.contactlink {
+body header a.contactlink {
   padding-right: 0px;
 }
-.main {
+body .container {
+  max-width: 800px;
+  background-color: #383838;
+  border-radius: 2px;
+}
+body .container .main {
   max-width: 760px;
   margin: 0 auto;
   padding-top: 20px;
 }
-.top-next {
+body .container .main .top-next {
   background-color: #d24c4b;
   display: flex;
   justify-content: flex-start;
@@ -196,23 +200,23 @@ header a.contactlink {
   border-radius: 2px;
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
 }
-.top-next .circle-picture {
+body .container .main .top-next .circle-picture {
   display: flex;
   justify-content: center;
 }
-.top-next .circle-picture img {
+body .container .main .top-next .circle-picture img {
   border-radius: 50%;
   width: 70%;
 }
-.top-next .name-section {
+body .container .main .top-next .name-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.top-next .name-section h1 {
+body .container .main .top-next .name-section h1 {
   font-size: 4rem;
 }
-.top-next .name-section button {
+body .container .main .top-next .name-section button {
   background-color: #d24c4b;
   border: 1px solid #383838;
   margin-top: 20px;
@@ -221,50 +225,81 @@ header a.contactlink {
   height: 40px;
   border-radius: 30px;
 }
-.top-next .name-section button i {
+body .container .main .top-next .name-section button i {
   padding-right: 10px;
 }
-hr {
-  border: 1px solid black;
-  margin: 30px 0;
-}
-.about {
+body .container .main .about {
   margin: 0 30px;
 }
-.skills-work {
+body .container .main .about .intro {
+  font-weight: bold;
+}
+body .container .main .skills-work {
   margin: 0 30px;
   display: flex;
 }
-.skill-section div {
+body .container .main .skills-work .skill-section {
+  width: 50%;
+}
+body .container .main .skills-work .skill-section p {
+  font-weight: bold;
+}
+body .container .main .skills-work .skill-section div {
   margin-bottom: 20px;
 }
-.skill-section div span {
+body .container .main .skills-work .skill-section div span {
   font-size: 1.3rem;
   color: rgba(208, 185, 179, 0.4);
 }
-.skill-section i {
+body .container .main .skills-work .skill-section i {
   font-size: 2rem;
 }
-.skill-section .html-icons i {
+body .container .main .skills-work .skill-section .html-icons i {
   color: blue;
 }
-.skill-section .css-icons i {
+body .container .main .skills-work .skill-section .css-icons i {
   color: yellow;
 }
-.skill-section .javascript-icons i {
+body .container .main .skills-work .skill-section .javascript-icons i {
   color: orangered;
 }
-.skill-section .php i {
+body .container .main .skills-work .skill-section .php i {
   color: purple;
 }
-footer {
+body .container .main .skills-work .work-history {
+  width: 50%;
+}
+body .container .main .skills-work .work-history .experience-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .container .main .skills-work .work-history .experience-div p {
+  font-weight: bold;
+}
+body .container .main .skills-work .work-history .experience-div span {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: rgba(208, 185, 179, 0.4);
+}
+body .container .main .skills-work .work-history .second-experience {
+  border-top: 1px dashed black;
+  padding-top: 6px;
+}
+body .container .main .skills-work .work-history .description {
+  font-style: italic;
+}
+body .container .main .contact {
+  margin: 0 30px;
+}
+body .container .main .contact .contact-form p {
+  font-weight: bold;
+}
+body .container footer {
   height: 60px;
   background-color: black;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.work-history h3 {
-  display: inline;
 }
