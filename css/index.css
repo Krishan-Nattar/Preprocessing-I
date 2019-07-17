@@ -443,6 +443,8 @@ body .container .main .contact .contact-form input {
   margin: 0px 0 8px 0;
   border: none;
   padding: 3px;
+  background-color: #e6e6e6;
+  border-radius: 5px;
   color: black;
   font-family: "Cormorant Garamond", serif;
 }
@@ -452,9 +454,12 @@ body .container .main .contact .contact-form input:focus {
 body .container .main .contact .contact-form textarea {
   margin-top: 0px;
   margin-bottom: 15px;
+  height: 70px;
   padding: 3px;
+  border-radius: 5px;
   border: none;
   color: black;
+  background-color: #cccccc;
   font-family: "Cormorant Garamond", serif;
 }
 body .container .main .contact .contact-form textarea:focus {
@@ -465,6 +470,7 @@ body .container .main .contact .contact-form button {
   background-color: #d24c4b;
   border: none;
   padding: 3px;
+  border-radius: 5px;
 }
 body .container .main .contact .contact-form button:focus {
   outline: 0;
