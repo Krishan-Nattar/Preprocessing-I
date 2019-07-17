@@ -147,6 +147,14 @@ table {
 // End Variables
 
 // Mixins
+
+.btn-hover{
+	&:hover{
+		// background-color: @container-background;
+		background-color: darken(@top-background,30%);
+		transition: 1s;
+	}
+}
 .focusoutline{
 	&:focus{
 		outline:0
@@ -266,6 +274,8 @@ body {
             height: 40px;
 			border-radius: 30px;
 			.focusoutline();
+
+			.btn-hover();
             i {
               padding-right: 10px;
             }
@@ -352,11 +362,13 @@ body {
 
           .second-experience {
             border-top: 1px dashed @body-background;
-            padding-top: 20px;
+			// padding-bottom: 0px;
+			padding-top: 10px;
           }
 
           .description {
-            font-style: italic;
+			font-style: italic;
+			padding-bottom: 10px;
           }
         }
       }
@@ -387,12 +399,14 @@ body {
 				border: none;
 				padding: 3px;
 				.focusoutline();
+				color: @body-background;
 			}
 			textarea{
 				margin-top: 0px;
 				margin-bottom: 15px;
 				padding: 3px;
 				border: none;
+				color:@body-background;
 				.focusoutline();
 			}
 
@@ -403,6 +417,7 @@ body {
 				border: none;
 				padding: 3px;
 				.focusoutline();
+				.btn-hover();
 			}
 		}
 		

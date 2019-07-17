@@ -131,6 +131,10 @@ table {
   box-sizing: border-box;
   color: #f7f3f2;
 }
+.btn-hover:hover {
+  background-color: #6a1b1a;
+  transition: 1s;
+}
 .focusoutline:focus {
   outline: 0;
 }
@@ -240,6 +244,10 @@ body .container .main .top-next .name-section button {
 body .container .main .top-next .name-section button:focus {
   outline: 0;
 }
+body .container .main .top-next .name-section button:hover {
+  background-color: #6a1b1a;
+  transition: 1s;
+}
 body .container .main .top-next .name-section button i {
   padding-right: 10px;
 }
@@ -299,10 +307,11 @@ body .container .main .skills-work .work-history .experience-div span {
 }
 body .container .main .skills-work .work-history .second-experience {
   border-top: 1px dashed black;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 body .container .main .skills-work .work-history .description {
   font-style: italic;
+  padding-bottom: 10px;
 }
 body .container .main .contact {
   margin: 0 30px;
@@ -328,6 +337,7 @@ body .container .main .contact .contact-form input {
   margin: 0px 0 8px 0;
   border: none;
   padding: 3px;
+  color: black;
 }
 body .container .main .contact .contact-form input:focus {
   outline: 0;
@@ -337,6 +347,7 @@ body .container .main .contact .contact-form textarea {
   margin-bottom: 15px;
   padding: 3px;
   border: none;
+  color: black;
 }
 body .container .main .contact .contact-form textarea:focus {
   outline: 0;
@@ -349,6 +360,10 @@ body .container .main .contact .contact-form button {
 }
 body .container .main .contact .contact-form button:focus {
   outline: 0;
+}
+body .container .main .contact .contact-form button:hover {
+  background-color: #6a1b1a;
+  transition: 1s;
 }
 body .container footer {
   height: 60px;
