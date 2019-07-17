@@ -176,7 +176,7 @@ html {
   max-width: 800px;
   margin: 0 auto;
   font-size: 62.5%;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: "Cormorant Garamond", serif;
 }
 @media screen and (max-width: 800px) {
   html {
@@ -202,6 +202,13 @@ body header nav {
   flex-grow: 1;
   display: flex;
   justify-content: flex-end;
+  padding-right: 3.8%;
+}
+@media screen and (max-width: 500px) {
+  body header nav {
+    padding-right: 0;
+    justify-content: space-around;
+  }
 }
 body header a {
   text-decoration: none;
@@ -209,6 +216,12 @@ body header a {
   color: rgba(255, 255, 255, 0.6);
   padding-left: 20px;
   text-align: center;
+}
+@media screen and (max-width: 500px) {
+  body header a {
+    padding-left: 0;
+    justify-content: center;
+  }
 }
 body header a.contactlink {
   padding-right: 0px;
@@ -451,6 +464,7 @@ body .container .main .contact .contact-form input {
   border: none;
   padding: 3px;
   color: black;
+  font-family: "Cormorant Garamond", serif;
 }
 body .container .main .contact .contact-form input:focus {
   outline: 0;
@@ -461,6 +475,7 @@ body .container .main .contact .contact-form textarea {
   padding: 3px;
   border: none;
   color: black;
+  font-family: "Cormorant Garamond", serif;
 }
 body .container .main .contact .contact-form textarea:focus {
   outline: 0;
