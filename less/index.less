@@ -143,11 +143,18 @@ table {
 @body-background: black;
 @container-background: #383838;
 @text-color: #f7f3f2;
+@form-background: skyblue;
 
 // End Variables
 
 // Mixins
 
+.active-form(){
+  &:focus{
+    background-color: @form-background;
+    transition: 1s;
+  }
+}
 .btn-hover() {
   &:hover {
     background-color: darken(@top-background, 30%);
@@ -507,9 +514,11 @@ body {
           input {
             margin: 0px 0 8px 0;
             border: none;
-            padding: 3px;
+            padding: 5px;
             background-color: darken(white, 10%);
             border-radius: 5px;
+            height: 30px;
+            .active-form();
             .focusoutline();
             color: @body-background;
             font-family: "Cormorant Garamond", serif;
@@ -518,11 +527,12 @@ body {
             margin-top: 0px;
             margin-bottom: 15px;
             height: 70px;
-            padding: 3px;
+            padding: 5px;
             border-radius: 5px;
             border: none;
             color: @body-background;
             background-color: darken(white, 20%);
+            .active-form();
             .focusoutline();
             font-family: "Cormorant Garamond", serif;
           }

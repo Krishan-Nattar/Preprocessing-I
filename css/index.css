@@ -442,11 +442,16 @@ body .container .main .contact .contact-form p {
 body .container .main .contact .contact-form input {
   margin: 0px 0 8px 0;
   border: none;
-  padding: 3px;
+  padding: 5px;
   background-color: #e6e6e6;
   border-radius: 5px;
+  height: 30px;
   color: black;
   font-family: "Cormorant Garamond", serif;
+}
+body .container .main .contact .contact-form input:focus {
+  background-color: skyblue;
+  transition: 1s;
 }
 body .container .main .contact .contact-form input:focus {
   outline: 0;
@@ -455,12 +460,16 @@ body .container .main .contact .contact-form textarea {
   margin-top: 0px;
   margin-bottom: 15px;
   height: 70px;
-  padding: 3px;
+  padding: 5px;
   border-radius: 5px;
   border: none;
   color: black;
   background-color: #cccccc;
   font-family: "Cormorant Garamond", serif;
+}
+body .container .main .contact .contact-form textarea:focus {
+  background-color: skyblue;
+  transition: 1s;
 }
 body .container .main .contact .contact-form textarea:focus {
   outline: 0;
