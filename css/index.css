@@ -105,7 +105,6 @@ section {
   display: block;
 }
 body {
-  line-height: 1;
   background-color: black;
 }
 ol,
@@ -132,8 +131,19 @@ table {
   box-sizing: border-box;
   color: #f7f3f2;
 }
+.focusoutline:focus {
+  outline: 0;
+}
 .innermargin {
   margin: 0 30px;
+}
+.flex-just-center {
+  display: flex;
+  justify-content: center;
+}
+.flex-just-end {
+  display: flex;
+  justify-content: flex-end;
 }
 h2 {
   font-size: 2rem;
@@ -156,7 +166,9 @@ html {
   max-width: 800px;
   margin: 0 auto;
   font-size: 62.5%;
-  line-height: 1.5;
+}
+body {
+  line-height: 2.5rem;
 }
 body header {
   display: flex;
@@ -210,8 +222,8 @@ body .container .main .top-next .circle-picture img {
 }
 body .container .main .top-next .name-section {
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
 }
 body .container .main .top-next .name-section h1 {
   font-size: 4rem;
@@ -224,6 +236,9 @@ body .container .main .top-next .name-section button {
   width: 160px;
   height: 40px;
   border-radius: 30px;
+}
+body .container .main .top-next .name-section button:focus {
+  outline: 0;
 }
 body .container .main .top-next .name-section button i {
   padding-right: 10px;
@@ -255,16 +270,16 @@ body .container .main .skills-work .skill-section i {
   font-size: 2rem;
 }
 body .container .main .skills-work .skill-section .html-icons i {
-  color: blue;
+  color: #e44d26;
 }
 body .container .main .skills-work .skill-section .css-icons i {
-  color: yellow;
+  color: #0070b7;
 }
 body .container .main .skills-work .skill-section .javascript-icons i {
-  color: orangered;
+  color: #f7df1e;
 }
 body .container .main .skills-work .skill-section .php i {
-  color: purple;
+  color: #8892bf;
 }
 body .container .main .skills-work .work-history {
   width: 50%;
@@ -284,16 +299,56 @@ body .container .main .skills-work .work-history .experience-div span {
 }
 body .container .main .skills-work .work-history .second-experience {
   border-top: 1px dashed black;
-  padding-top: 6px;
+  padding-top: 20px;
 }
 body .container .main .skills-work .work-history .description {
   font-style: italic;
 }
 body .container .main .contact {
   margin: 0 30px;
+  width: 300px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+body .container .main .contact .contact-form {
+  display: flex;
+  flex-direction: column;
+  color: #cccccc;
+  font-size: 1.2rem;
+}
+body .container .main .contact .contact-form h2 {
+  text-align: center;
+  margin-bottom: 15px;
 }
 body .container .main .contact .contact-form p {
   font-weight: bold;
+  text-align: center;
+}
+body .container .main .contact .contact-form input {
+  margin: 0px 0 8px 0;
+  border: none;
+  padding: 3px;
+}
+body .container .main .contact .contact-form input:focus {
+  outline: 0;
+}
+body .container .main .contact .contact-form textarea {
+  margin-top: 0px;
+  margin-bottom: 15px;
+  padding: 3px;
+  border: none;
+}
+body .container .main .contact .contact-form textarea:focus {
+  outline: 0;
+}
+body .container .main .contact .contact-form button {
+  color: white;
+  background-color: #d24c4b;
+  border: none;
+  padding: 3px;
+}
+body .container .main .contact .contact-form button:focus {
+  outline: 0;
 }
 body .container footer {
   height: 60px;

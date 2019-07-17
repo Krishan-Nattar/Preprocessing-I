@@ -107,7 +107,6 @@ section {
   display: block;
 }
 body {
-  line-height: 1;
   background-color: @body-background;
 }
 ol,
@@ -135,7 +134,7 @@ table {
 * {
   box-sizing: border-box;
   color: @text-color;
-  //   border: 1px dotted blue !important;
+  // border: 1px dotted blue !important;
 }
 
 // Variables
@@ -145,10 +144,29 @@ table {
 @container-background: #383838;
 @text-color: #f7f3f2;
 
+// End Variables
+
 // Mixins
+.focusoutline{
+	&:focus{
+		outline:0
+	}
+}
 .innermargin {
   margin: 0 30px;
 }
+
+.flex-just-center {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-just-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+// End Mixins
 
 h2 {
   font-size: 2rem;
@@ -175,19 +193,18 @@ html {
   max-width: 800px;
   margin: 0 auto;
   font-size: 62.5%;
-  line-height: 1.5;
 }
 body {
+  line-height: 2.5rem;
   header {
-    display: flex;
-    justify-content: flex-end;
+    .flex-just-end();
+
     align-items: center;
     max-width: 100%;
     height: 60px;
     nav {
       flex-grow: 1;
-      display: flex;
-      justify-content: flex-end;
+      .flex-just-end();
     }
 
     a {
@@ -228,14 +245,14 @@ body {
             border-radius: 50%;
             width: 70%;
           }
-          display: flex;
-          justify-content: center;
+          .flex-just-center();
         }
 
         .name-section {
-          display: flex;
+          .flex-just-center();
+
           flex-direction: column;
-          justify-content: center;
+
           h1 {
             font-size: 4rem;
           }
@@ -247,7 +264,8 @@ body {
             font-size: 1.5rem;
             width: 160px;
             height: 40px;
-            border-radius: 30px;
+			border-radius: 30px;
+			.focusoutline();
             i {
               padding-right: 10px;
             }
@@ -265,14 +283,19 @@ body {
 
       .skills-work {
         .innermargin();
+
         display: flex;
+
         .skill-section {
           width: 50%;
+
           p {
             font-weight: bold;
           }
+
           div {
             margin-bottom: 20px;
+
             span {
               font-size: 1.3rem;
               color: fade(darken(@text-color, 20%), 40%);
@@ -282,24 +305,28 @@ body {
           i {
             font-size: 2rem;
           }
+
           .html-icons {
             i {
-              color: blue;
+              color: #e44d26;
             }
           }
+
           .css-icons {
             i {
-              color: yellow;
+              color: #0070b7;
             }
           }
+
           .javascript-icons {
             i {
-              color: orangered;
+              color: #f7df1e;
             }
           }
+
           .php {
             i {
-              color: purple;
+              color: #8892bf;
             }
           }
         }
@@ -322,10 +349,12 @@ body {
               color: fade(darken(@text-color, 20%), 40%);
             }
           }
+
           .second-experience {
             border-top: 1px dashed @body-background;
-            padding-top: 6px;
+            padding-top: 20px;
           }
+
           .description {
             font-style: italic;
           }
@@ -333,13 +362,59 @@ body {
       }
 
       .contact {
-        .innermargin();
+		.innermargin();
+		width: 300px;
+		margin: 0 auto;
+		padding-bottom: 20px;
+		.contact-form{
+			display:flex;
+			flex-direction: column;
+			color: darken(@link-color, 20%);
+			font-size: 1.2rem;
 
-        .contact-form {
-          p {
-            font-weight: bold;
-          }
-        }
+			h2{
+				text-align: center;
+				margin-bottom: 15px;
+			}
+
+			p{
+				font-weight: bold;
+				text-align: center;
+			}
+
+			input{
+				margin: 0px 0 8px 0;
+				border: none;
+				padding: 3px;
+				.focusoutline();
+			}
+			textarea{
+				margin-top: 0px;
+				margin-bottom: 15px;
+				padding: 3px;
+				border: none;
+				.focusoutline();
+			}
+
+			button{
+				color:@link-color;
+				background-color: @top-background;
+				// border:1px solid black;
+				border: none;
+				padding: 3px;
+				.focusoutline();
+			}
+		}
+		
+         
+		//   .form-btn{
+			//   background-color: white !important;
+			
+		// 	button {
+        //   color: green;
+          // width: 500px !important;
+        // }
+        //   }
       }
     }
 
@@ -347,8 +422,7 @@ body {
       height: 60px;
       background-color: @body-background;
       text-align: center;
-      display: flex;
-      justify-content: center;
+      .flex-just-center();
       align-items: center;
     }
   }
