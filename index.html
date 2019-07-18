@@ -1,19 +1,169 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
 
-  <title>My Resume</title>
+    <title>My Resume</title>
 
-  <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/4cba22be64.js"></script>
 
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
-</head>
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+  </head>
 
-<body>
-  <h1>My Resume</h1>
-</body>
+  <body>
+    <!-- <h1>My Resume</h1> -->
+    <header>
+      <nav>
+        <a href="#" class="homelink">Home</a>
+        <a href="https://krishan-nattar.github.io/" target = "_blank">Portfolio</a>
+        <a href="#">Blog</a>
+        <a href="#contact-section" class="contactlink">Contact</a>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="main">
+        <div class="top-next">
+          <div class="circle-picture">
+            <img src="images/pic01.jpg" alt="" />
+          </div>
+          <div class="name-section">
+            <h1>Krishan Nattar</h1>
+            <h3>Software Engineer</h3>
+
+            <button><i class="fas fa-envelope"></i>Contact Me</button>
+          </div>
+        </div>
+
+        <section class="about">
+          <h2>About Me</h2>
+          <p>
+            <span class="intro">Hello, My name is Krishan Nattar!</span
+            ><br /><br />
+            I am a software engineer based out of Portland, Oregon. I have experience in fullstack web development along with custom applications.
+          </p>
+          <br />
+          <p>
+            My interest in programming began in the mid 90s when I started
+            playing around with basic HTML websites. Later on I played around with scripting video games. Now I work full time
+            developing high end websites.
+          </p>
+          <hr />
+        </section>
+        <div class="skills-work">
+          <section class="skill-section">
+            <h2>Skills</h2>
+            <p>HTML</p>
+            <div class="html-icons">
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+              <i class="far fa-circle"></i>
+              <i class="far fa-circle"></i>
+              <span>Expert</span>
+            </div>
+
+            <p>CSS</p>
+            <div class="css-icons">
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+              <i class="far fa-circle"></i>
+              <span>Expert</span>
+            </div>
+
+            <p>JavaScript</p>
+            <div class="javascript-icons">
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+              <i class="far fa-circle"></i>
+              <i class="far fa-circle"></i>
+              <i class="far fa-circle"></i>
+              <i class="far fa-circle"></i>
+              <span>Intermediate</span>
+            </div>
+
+            <p>PHP</p>
+            <div class="php">
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+              <i class="far fa-circle"></i>
+              <i class="far fa-circle"></i>
+              <i class="far fa-circle"></i>
+              <i class="far fa-circle"></i>
+              <i class="far fa-circle"></i>
+              <i class="far fa-circle"></i>
+              <span>Novice</span>
+            </div>
+            <hr class="skills-line-break" />
+          </section>
+          <section class="work-history">
+            <h2>Experience</h2>
+            <div class="experience-div">
+              <p>LMS Blue</p>
+              <span>2018-2019</span>
+            </div>
+            <p>PHP Developer</p>
+            <p class="description">
+              Designed a learning management system to allow companies to sell
+              courses via custom web pages embedded within the platform.
+            </p>
+
+            <div class="experience-div second-experience">
+              <p>OM Seafood</p>
+              <span>2017-2019</span>
+            </div>
+            <p>Head of IT</p>
+            <p class="description">
+              Responsible for all things tech related. This included web design,
+              custom scripts in VBA, and custom applications using VBScript
+            </p>
+          </section>
+        </div>
+        <hr />
+        <section class="contact" id="contact-section">
+          <form class="contact-form" action="#" method="post">
+            <h2>Contact</h2>
+            <p>Please get in touch</p>
+            Name
+            <input placeholder="Name" type="text" tabindex="1" required />
+            Email
+            <input placeholder="Email" type="email" tabindex="2" required />
+            Phone
+            <input placeholder="Phone" type="tel" tabindex="3" required />
+            Message
+            <textarea placeholder="Message" tabindex="4" required></textarea>
+
+            <button>Submit</button>
+          </form>
+        </section>
+      </div>
+      
+    </div>
+    <footer><p>Copyright Krishan's Stuff 2019</p></footer>
+  </body>
 </html>
